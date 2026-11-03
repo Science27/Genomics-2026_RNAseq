@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name=bowtie_WTB1_1 --output=z01.%x.%j.out
+#SBATCH --mail-type=END,FAIL --mail-user=hjr47@georgetown.edu
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=4  --time=72:00:00
+#SBATCH --mem=4G
+
+#------------------set enviornment, load module-------------#
+module load bowtie2/2.5.4
+
+#------------------bowtie script----------------------------#
+bowtie2 -p 4 -x calb -1 WTB1_1_trmPE.fq.gz -2 WTB1_2_trmPE.fq.gz -S WTB1.SAM
+
+
