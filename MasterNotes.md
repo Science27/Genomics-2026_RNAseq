@@ -45,7 +45,8 @@ Below are the FastQC reports for the WTB1 and WTB2 forward and reverse files AFT
 
 [WTB2_2_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610923/WTB2_2_trmPE.fq.gz.FastQC.Report.pdf)
 
-
+### Aligning Reads to Reference Genome (Bowtie2)
+Bowtie2 was used to align the trimed paired-end reads of WTB1 and WTB2 to the Candida albicans reference genome. 
 
 
 
