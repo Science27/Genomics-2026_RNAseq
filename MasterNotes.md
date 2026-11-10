@@ -4,9 +4,9 @@ This project works with Candida albicans, a commensal yeast that can cause a var
 The data was constructed from a single biological replicate (B) that was exposed to thiamine and thiamine-deficient enviornments. The data consists of the paired end fastqc sequencing files for both conditions. The forward and reverse files for Candida albicans grown on a thiamine-containing media are WTB1_1.fq.gz and WTB1_2.fq.gz, respectively. The forward and reverse files for Candida albicans grown on a thiamine-deficient media are WTB2_1.fq.gz and WTB2_2.fq.gz. WTB1 refers to the population grown in thiamime-containing media. WTB2 refers to the population grown in thiamine deficient media. 
 
 ### Initial assessment of read quality (fastQC analysis)
-Forward and reverse read quality was assessed using fastQC. WTB1_1.fq.gz and WTB1_2.fq.gz each contained 20723512 reads while WTB2_1.fq.gz and WTB2_2.fq.gz had 20353936 reads. The per-base sequence content in the first ten bases of reads exhibtied signifigant variability. Additionally, a significant number of  sequecnes exhibited ten-fold or greater sequence duplication. The distribution of GC content per read differed from the theoretical distribution. 
+Forward and reverse read quality was assessed using fastQC. WTB1_1.fq.gz and WTB1_2.fq.gz each contained 20723512 reads while WTB2_1.fq.gz and WTB2_2.fq.gz had 20353936 reads. The per-base sequence content in the first ten bases of reads exhibtied signifigant variability. Additionally, a significant number of sequecnes exhibited ten-fold or greater sequence duplication. Duplication issues were not addressed as it could affect downstream gene expression analysis. The distribution of GC content per read differed marginally from the theoretical distribution. The ends of reads exhibited elevated adapter content. 
 
-Below are the FastQC reports for the forward and reverse files before cleaning:
+Below are the FastQC reports for the WTB1 and WTB2 forward and reverse files BEFORE cleaning:
 
 [WTB1_1.fq.gz_FastQC Report.pdf](https://github.com/user-attachments/files/34608685/WTB1_1.fq.gz_fastQC.pdf)
 
@@ -32,6 +32,10 @@ FastQC was used to analyze the read quality of the forward and reverse paired-en
 WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz each containted 20051122 reads, which represents a 3.24% reduction in the number of reads when compared to the uncleaned forward and reverse WTB1 files: WTB1_1.fq.gz and WTB1_2.fq.gz. 
 
 WTB2_1_trmPE.fq.gz and WTB2_2_trmPE.fq.gz each contained 19629995 reads, which represents a 3.56% reduction in the number of reads when compared to the uncleaned forward and reverse WTB2 files: WTB2_1.fq.gz and WTB2_2.fq.gz.
+
+Removal of the first seventeen bases resulted in consistent per-base content across reads. A signifigant number of sequences exhibited ten-fold or greater duplication. Adapter content remained elevated at the ends of reads in each of the four files. 
+
+Below are the FastQC reports for the WTB1 and WTB2 forward and reverse files AFTER cleaning:
 
 
 
