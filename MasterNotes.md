@@ -46,7 +46,15 @@ Below are the FastQC reports for the WTB1 and WTB2 forward and reverse files AFT
 [WTB2_2_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610923/WTB2_2_trmPE.fq.gz.FastQC.Report.pdf)
 
 ### Aligning Reads to Reference Genome (Bowtie2)
-Bowtie2 was used to align the trimmed paired-end reads of WTB1 and WTB2 to the Candida albicans reference genome. WTB1.SAM was generated from aligning WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz to the reference genome. WTB2.SAM was generated from aligning 
+Bowtie2 was used to align the trimmed paired-end reads of WTB1 and WTB2 to the Candida albicans reference genome. WTB1.SAM was generated from aligning WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz to the reference genome. WTB2.SAM was generated from aligning WTB2_1_trmPE.fq.gz and WTB2_2_trmPE.fq.gz to the reference genome. WTB1.SAM had a concordant alignment rate (one time) of 88.91% while WTB2.SAM had a concordant alignment rate (one time) of 89.32%. 
+
+Below are the bowtie sbatch scripts:
+
+[WTB1 bowtie script](Script/bowtie_WTB1_1)
+
+[WTB2 bowtie script](Script/bowtie/WTB2)
+
+
 
 
 
