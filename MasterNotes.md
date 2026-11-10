@@ -16,11 +16,8 @@ Below are the FastQC reports for the forward and reverse files before cleaning:
 
 [WTB2_2.fq.gz_FastQC Report.pdf](https://github.com/user-attachments/files/34608763/WTB2_2.fq.gz_FastQC.Report.pdf)
 
+### Read cleaning and analysis (trimmomatic and post-cleaning fastQC)
+Trimmomatic was used to clean the forward and reverse files of both experimental conditions. HEADCROP: 17 was used to remove the first few bases of each read, which exhibited greater variation in per-base sequence content before cleaning. 
 
+The trimmomatic sbatch script can be found here:
 
-
-
-
-
-### Read cleaning (trimmomatic)
-Trimmomatic was used to clean the forward and reverse files of each experimental condition. 
