@@ -37,6 +37,15 @@ Removal of the first seventeen bases resulted in consistent per-base content acr
 
 Below are the FastQC reports for the WTB1 and WTB2 forward and reverse files AFTER cleaning:
 
+[WTB1_1_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610818/WTB1_1_trmPE.fq.gz.FastQC.Report.pdf)
+
+[WTB1_2_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610833/WTB1_2_trmPE.fq.gz.FastQC.Report.pdf)
+
+[WTB2_1_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610852/WTB2_1_trmPE.fq.gz.FastQC.Report.pdf)
+
+[WTB2_2_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610923/WTB2_2_trmPE.fq.gz.FastQC.Report.pdf)
+
+
 
 
 
