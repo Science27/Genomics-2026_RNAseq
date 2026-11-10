@@ -4,4 +4,4 @@ This project works with Candida albicans, a commensal yeast that can cause a var
 The data was constructed from a single biological replicate (B) that was exposed to thiamine and thiamine-deficient enviornments. The data consists of the paired end fastqc sequencing files for both conditions. The forward and reverse files for Candida albicans grown on a thiamine-containing media are WTB1_1.fq.gz and WTB1_2.fq.gz, respectively. The forward and reverse files for Candida albicans grown on a thiamine-deficient media are WTB2_1.fq.gz and WTB2_2.fq.gz. 
 
 ### Initial assessment of read quality (fastQC analysis)
-The paired end files
+Forward and reverse read quality was assessed using fastQC. WTB1_1.fq.gz and WTB1_2.fq.gz each contained 20723512 reads while WTB2_1.fq.gz and WTB2_2.fq.gz had 20353936 reads. The per-base sequence content in the first ten bases of reads exhibtied signifigant variability. Additionally, there were a significant number of  sequecnes with more than 10x duplication. 
