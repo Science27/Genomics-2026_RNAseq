@@ -29,7 +29,9 @@ The trimmomatic sbatch script can be found here:
 
 FastQC was used to analyze the read quality of the forward and reverse paired-end output files: WTB1_1_trmPE.fq.gz, WTB1_2_trmPE.fq.gz, WTB2_1_trmPE.fq.gz, and WTB2_2_trmPE.fq.gz.
 
-WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz each containted 20051122 reads, which represents a 3.24% reduction in the number of reads when compared to WTB1_1.fq.gz and WTB1_2.fq.gz, the uncleaned forward and reverse WTB1 files.
+WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz each containted 20051122 reads, which represents a 3.24% reduction in the number of reads when compared to the uncleaned forward and reverse WTB1 files: WTB1_1.fq.gz and WTB1_2.fq.gz. 
+
+WTB2_1_trmPE.fq.gz and WTB2_2_trmPE.fq.gz each contained 19629995 reads, which represents a 3.56% reduction in the number of reads when compared to the uncleaned forward and reverse WTB2 files: WTB2_1.fq.gz and WTB2_2.fq.gz.
 
 
 
