@@ -54,6 +54,9 @@ Below are the bowtie sbatch scripts:
 
 [WTB2 bowtie script](Script/bowtie/WTB2)
 
+### Samtools File Conversion 
+Samtools was used to convert the SAM files to BAM files, a binary format that reduces file size. WTB1.SAM and WTB2.SAM were converted to WTB1.BAM and WTB2.BAM, respectively. The resulting BAM files were sorted by genomic coordinates, generating WTB1_sort.BAM and WTB2.srt.BAM. Index files were created for both sorted BA  files: WTB1_sort.BAM.bai and WTB2.srt.BAM.bai. 
+
 
 
 
