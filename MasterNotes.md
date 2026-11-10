@@ -45,7 +45,7 @@ Below are the FastQC reports for the WTB1 and WTB2 forward and reverse paired-en
 
 [WTB2_2_trmPE.fq.gz FastQC Report.pdf](https://github.com/user-attachments/files/34610923/WTB2_2_trmPE.fq.gz.FastQC.Report.pdf)
 
-### Aligning Reads to Reference Genome (Bowtie2)
+### Aligning reads to reference genome (Bowtie2)
 Bowtie2 was used to align the trimmed paired-end reads of WTB1 and WTB2 to the Candida albicans reference genome (GCF_000182965.3_ASM18296v3_genomic.gtf). WTB1.SAM was generated from aligning WTB1_1_trmPE.fq.gz and WTB1_2_trmPE.fq.gz to the reference genome. WTB2.SAM was generated from aligning WTB2_1_trmPE.fq.gz and WTB2_2_trmPE.fq.gz to the reference genome. WTB1.SAM had a concordant alignment rate (one time) of 88.91% while WTB2.SAM had a concordant alignment rate (one time) of 89.32%. 
 
 Below are the bowtie sbatch scripts:
@@ -54,5 +54,5 @@ Below are the bowtie sbatch scripts:
 
 [WTB2 bowtie script](Script/bowtie/WTB2)
 
-### Samtools File Conversion 
+### SAM conversion, sorting, and indexing (Samtools)
 Samtools was used to convert the SAM files to BAM files, a binary format that reduces file size. WTB1.SAM and WTB2.SAM were converted to WTB1.BAM and WTB2.BAM, respectively. The resulting BAM files were sorted by genomic coordinates, generating WTB1_sort.BAM and WTB2.srt.BAM. Index files were created for both sorted BAM files: WTB1_sort.BAM.bai and WTB2.srt.BAM.bai. 
