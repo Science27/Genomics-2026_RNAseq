@@ -21,3 +21,10 @@ Trimmomatic was used to clean the forward and reverse files of both experimental
 
 The trimmomatic sbatch script can be found here:
 
+[trimmomatic script - WTB1](Scripts/trimmomatic_WTB1_1)
+
+[trimmomatic script - WTB2](Scripts/trimmomatic_WTB2_2)
+
+
+
+
